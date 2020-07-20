@@ -3,7 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web Dev Quiz</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Entry Web Developer Quiz</h1>
+    <div id="start">
+      <div class="container start">
+        <h2>Are you ready to test your developer skills?</h2>
+        <button id="startBtn">Start</button>
+      </div>
+    </div>
+    <div id="quizArea" class="container hide">
+      <div id="questionArea">Question</div>
+      <div id="choiceArea">
+        <button id="choice1"></button>
+        <button id="choice2"></button>
+        <button id="choice3"></button>
+        <button id="choice4"></button>
+        <button id="nextBtn"></button>
+      </div>
+      <div id="answerArea">Answer</div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
