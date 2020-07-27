@@ -114,3 +114,7 @@ input {
 .incorrect {
   background-color: rgb(224, 81, 81);
 }
+
+.styledText {
+  font-size: 30px;
+}
