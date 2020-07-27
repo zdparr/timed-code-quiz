@@ -47,6 +47,11 @@ input {
   align-items: center;
 }
 
+#highScoreList {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
 /* Classes */
 .container {
   width: 100vw;
