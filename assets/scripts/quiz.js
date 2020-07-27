@@ -62,6 +62,7 @@ function startQuiz() {
 
 function nextQuestion() {
   if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
+    localStorage.setItem("recentScore", score);
     return window.location.assign(
       "https://zdparr.github.io/timed-code-quiz/assets/pages/end.html"
     );
