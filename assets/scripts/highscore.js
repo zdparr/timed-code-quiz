@@ -9,7 +9,7 @@ highScoreList.innerHTML = highScores
   .join("");
 
 function resetScores() {
-  console.log("reset button clicked");
+  window.localStorage.clear();
 }
 
 resetBtn.addEventListener("click", resetScores);
