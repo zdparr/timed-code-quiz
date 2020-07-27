@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App Home</title>
+    <title>Quiz App Questions</title>
     <!-- Local style sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -21,15 +21,16 @@
   </head>
   <body>
     <div class="container">
-      <div id="home" class="center">
-        <h1>Test your skills!</h1>
-        <a href="/assets/pages/quiz.html" id="startBtn" class="btn"
-          >Start<i class="fas fa-play"></i
-        ></a>
-        <a href="/assets/pages/highscore.html" id="highScoreBtn" class="btn"
-          >High Scores<i class="fas fa-crown"></i
-        ></a>
+      <div class="quiz">
+        <h1 id="question">What is the answer?</h1>
+        <div id="choices">
+          <p class="choice btn" data-number="1">A</p>
+          <p class="choice btn" data-number="2">B</p>
+          <p class="choice btn" data-number="3">C</p>
+          <p class="choice btn" data-number="4">D</p>
+        </div>
       </div>
     </div>
+    <script src="/assets/scripts/quiz.js"></script>
   </body>
 </html>

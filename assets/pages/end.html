@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App Home</title>
+    <title>Quiz App High Score</title>
     <!-- Local style sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -21,15 +21,17 @@
   </head>
   <body>
     <div class="container">
-      <div id="home" class="center">
-        <h1>Test your skills!</h1>
-        <a href="/assets/pages/quiz.html" id="startBtn" class="btn"
-          >Start<i class="fas fa-play"></i
-        ></a>
-        <a href="/assets/pages/highscore.html" id="highScoreBtn" class="btn"
-          >High Scores<i class="fas fa-crown"></i
-        ></a>
+      <div id="end">
+        <h1 id="finalScore">0</h1>
+        <form id="endForm">
+          <label for="name">Enter your name to save your score: </label>
+          <input type="text" name="name" id="name" placeholder="" />
+          <p class="btn">Save</p>
+          <a href="/assets/pages/quiz.html" class="btn">Play Again</a>
+          <a href="/index.html" class="btn">Home</a>
+        </form>
       </div>
     </div>
+    <script src="/assets/scripts/highscore.js"></script>
   </body>
 </html>

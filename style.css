@@ -1,40 +1,107 @@
+/* Elements */
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: rgb(21, 49, 102);
-  color: white;
-  font-size: 18px;
+  background-color: rgb(243, 245, 255);
 }
 
-button {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 48px;
+}
+
+label {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-bottom: 25px;
+  height: 40px;
+  width: 300px;
+}
+
+/* Id's */
+#question {
+  font-size: 32px;
   margin-bottom: 20px;
-  font-size: 20px;
-  background-color: rgb(21, 49, 102);
-  color: white;
-  border-radius: 5px;
-  padding: 10px 10px;
 }
 
-#quizArea {
-  margin-top: 15%;
-  width: 70%;
-  height: 70%;
-}
-
-.container {
+#end {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-.hide {
-  display: none;
+#endForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Classes */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 25px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #2f8dff;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px #888888;
+}
+
+.fas {
+  margin-left: 15px;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  width: 100%;
+  padding: 15px 15px;
+}
+
+.correct {
+  background-color: rgb(102, 238, 102);
+}
+
+.incorrect {
+  background-color: rgb(224, 81, 81);
 }
