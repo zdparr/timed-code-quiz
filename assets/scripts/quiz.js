@@ -70,11 +70,7 @@ function startTimer() {
 }
 
 function nextQuestion() {
-  if (
-    availableQuestions.length === 0 ||
-    questionCounter > maxQuestions ||
-    timeLeft === 0
-  ) {
+  if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
     localStorage.setItem("recentScore", score);
     return window.location.assign(
       "https://zdparr.github.io/timed-code-quiz/assets/pages/end.html"
@@ -104,10 +100,11 @@ choices.forEach((choice) => {
     let applyClass;
 
     if (selectedAnswer == currentQuestion.answer) {
-      score++;
+      score = score + 20;
       applyClass = "correct";
       selectedChoice.classList.add(applyClass);
     } else {
+      timeLeft = timeLeft - 10;
       applyClass = "incorrect";
       selectedChoice.classList.add(applyClass);
     }
