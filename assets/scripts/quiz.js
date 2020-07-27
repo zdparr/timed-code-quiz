@@ -40,7 +40,8 @@ function nextQuestion() {
   if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
     return window.location.assign("/end.html");
   }
-  //questionCounter++;
+  acceptingAnswers = true;
+  questionCounter++;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
