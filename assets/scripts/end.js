@@ -6,7 +6,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 finalScore.innerText = recentScore;
 
-function saveScore() {
+function saveScore(e) {
   e.preventDefault();
   const score = {
     score: recentScore,
@@ -23,4 +23,4 @@ function saveScore() {
   window.location.assign("/");
 }
 
-saveBtn.addEventListener("click", saveScore(e));
+saveBtn.addEventListener("click", saveScore);
