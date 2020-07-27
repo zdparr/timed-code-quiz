@@ -1,7 +1,7 @@
 // Variables
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice"));
-const maxQuestions = 2;
+const maxQuestions = 5;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -10,11 +10,11 @@ let acceptingAnswers = true;
 
 let questions = [
   {
-    question: "What is 2 + 2:",
-    choice1: "2",
-    choice2: "4",
-    choice3: "6",
-    choice4: "10",
+    question: "Strings are enclosed within?",
+    choice1: "Quotes",
+    choice2: "Parantheses",
+    choice3: "Curly Brackets",
+    choice4: "Semicolons",
     answer: 2,
   },
   {
@@ -23,6 +23,30 @@ let questions = [
     choice2: "<style>",
     choice3: "<script>",
     choice4: "<div>",
+    answer: 1,
+  },
+  {
+    question: "What tag is used to add an external Javascript page",
+    choice1: "<link>",
+    choice2: "<style>",
+    choice3: "<script>",
+    choice4: "<div>",
+    answer: 3,
+  },
+  {
+    question: "Arrays in JavaScript can be used to store?",
+    choice1: "Other Arrays",
+    choice2: "Numbers and Strings",
+    choice3: "Booleans",
+    choice4: "All the above",
+    answer: 4,
+  },
+  {
+    question: "What function creates a pop to give a user information",
+    choice1: "alert()",
+    choice2: "console.log()",
+    choice3: "confirm()",
+    choice4: "document.write()",
     answer: 1,
   },
 ];
