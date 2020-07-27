@@ -50,6 +50,10 @@ input {
 #highScoreList {
   list-style: none;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Classes */
