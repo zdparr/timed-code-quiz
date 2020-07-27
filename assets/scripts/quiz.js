@@ -2,6 +2,8 @@
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice"));
 const maxQuestions = 5;
+const timer = document.querySelector("#timer");
+let timeLeft = 60;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -56,12 +58,23 @@ function startQuiz() {
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
-
+  startTimer();
   nextQuestion();
 }
 
+function startTimer() {
+  setInterval(function () {
+    timer.innerHTML = timeLeft;
+    timeLeft -= 1;
+  }, 1000);
+}
+
 function nextQuestion() {
-  if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
+  if (
+    availableQuestions.length === 0 ||
+    questionCounter > maxQuestions ||
+    timeLeft === 0
+  ) {
     localStorage.setItem("recentScore", score);
     return window.location.assign(
       "https://zdparr.github.io/timed-code-quiz/assets/pages/end.html"
