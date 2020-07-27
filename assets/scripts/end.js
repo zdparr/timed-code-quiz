@@ -20,7 +20,9 @@ function saveScore(e) {
   });
 
   localStorage.setItem("highScores", JSON.stringify(highScores));
-  window.location.assign("/");
+  window.location.assign(
+    "https://zdparr.github.io/timed-code-quiz/assets/pages/end.html"
+  );
 }
 
 saveBtn.addEventListener("click", saveScore);
