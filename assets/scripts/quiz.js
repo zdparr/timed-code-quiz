@@ -15,7 +15,7 @@ let questions = [
     choice2: "Parantheses",
     choice3: "Curly Brackets",
     choice4: "Semicolons",
-    answer: 2,
+    answer: 1,
   },
   {
     question: "What tag is used to add an external CSS page",
