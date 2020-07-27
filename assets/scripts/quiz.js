@@ -64,8 +64,15 @@ function startQuiz() {
 
 function startTimer() {
   setInterval(function () {
-    timer.innerHTML = timeLeft;
-    timeLeft -= 1;
+    if (timeLeft === 0) {
+      localStorage.setItem("recentScore", score);
+      return window.location.assign(
+        "https://zdparr.github.io/timed-code-quiz/assets/pages/end.html"
+      );
+    } else {
+      timer.innerHTML = timeLeft;
+      timeLeft -= 1;
+    }
   }, 1000);
 }
 
